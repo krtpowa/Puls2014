@@ -29,13 +29,17 @@
 }
 .icon-estrella:before {
 	content: "\e601";
+	color: yellow;
 }
 .icon-f-arriba:before {
 	content: "\e602";
+	color: green;
 }
 .icon-f-abajo:before {
 	content: "\e603";
+	color: orange;
 }
+
 
 a
 {
@@ -217,4 +221,29 @@ nav ul li a
 #contenido .item .votacion .guardar_item
 {
 	float: right;
+}
+#contenido .item .votacion .comentarios_item{
+	font-weight: bold;
+}
+#contenido .item .votacion .guardar_item{
+	margin-right: 0.3em;
+}
+#contenido .item .votacion a{
+	text-decoration: none;
+}
+
+
+@media screen and (min-width:768px){
+	
+	#contenido{
+		overflow: hidden;
+	}
+
+	#contenido .item{
+		width: 49%;
+		float: left;
+	}
+	#contenido .item:nth-child(odd){
+		margin-right: 2%;
+	}
 }
